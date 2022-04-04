@@ -1,0 +1,36 @@
+img{
+    border-radius: 15px;
+    border: 4px outset #aaf08583;
+    
+}
+.tarjeta{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background: -webkit-radial-gradient(right, #85ACF0 , #9385f0a8 , #85e2f0a4   );
+}
+.adicionales{
+    display: flex;
+   
+    
+}
+.genres{
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+.rating{
+    display: flex;
+    margin-left: 35px;
+    justify-content:center;
+    
+}
+.jake{
+    border: none;
+}
+.cal{
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 5px;
+}

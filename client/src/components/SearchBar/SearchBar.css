@@ -1,0 +1,23 @@
+.buscar{
+    background-color:#85acf09f; 
+    border-radius: 5px;
+    border: 2px inset #aaf08583;
+    padding: 10px;
+    font-size: medium;
+    
+}
+.busca{
+    background-color:#85acf09f; 
+    border-radius: 5px;
+    border: 2px inset #aaf08583;
+    padding: 7px;
+    font-size: medium;
+    font-weight: bold;
+    color: #e7d6d6;
+}
+.busqueda{
+    margin: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+}

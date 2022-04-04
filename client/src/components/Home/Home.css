@@ -1,0 +1,62 @@
+.contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    
+    flex-wrap: wrap;
+}
+.filters{
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+select{
+   color: #e7d6d6;
+   font-weight: bolder;
+    border-radius: 5px;
+    
+    padding-left:0 ;
+    font-size: larger;
+    
+    margin-top: 10px;
+    margin: 1px;
+    
+}
+option{
+    color: black;
+    background-color: rgba(119, 179, 214, 0.644);
+    
+}
+
+label{
+    color: #e7d6d6;
+    font-weight: bolder;
+    font-size: larger;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+.card{
+    float: left;
+    width: 40%;
+    
+    
+    
+}
+
+.load{
+    border: none;
+    margin-top:  200px;
+}
+
+
+.detalle{
+    text-decoration: none;
+    color: black;
+}
+
+.boton{
+    font-weight: bold;
+    font-size: large;
+    color: #e7d6d6;
+}

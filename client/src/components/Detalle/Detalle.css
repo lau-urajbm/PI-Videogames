@@ -1,0 +1,55 @@
+.detalles{
+    
+    background: -webkit-radial-gradient(right, #85ACF0 , #9385f0a8 , #85e2f0a4   );
+    border-radius: 5px;
+    border: 2px outset #aaf08583;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+    
+    
+}
+.descrip{
+    text-align: left;
+}
+.noDes{
+    display: flex;
+   
+    justify-content: space-between;
+    margin: 20px;
+    padding-bottom: 10px;
+}
+
+.cargando{
+    border-radius: 5px;
+    width:  50%;
+    margin: 50px;
+}
+.tituloD{
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    text-align: center;
+    /* background-color: rgba(102, 198, 246, 0.568); */
+    display: block;
+    
+}
+
+.game{
+    background-color: rgb(102, 197, 246, 0.74);
+    border-radius: 5px;
+    border: 2px inset #aaf08583;
+}
+
+.home{
+    background-color: #F7C477;
+    border-radius: 5px;
+    border: 2px outset #6ba7ad;
+    padding: 8px;
+}
+.container{
+    margin-bottom: 20px;
+}

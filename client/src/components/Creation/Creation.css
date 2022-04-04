@@ -1,0 +1,131 @@
+.navbarForm{
+    display: flex;
+   z-index: 10;
+   align-self: flex-start;
+   background-color: rgba(211, 192, 110, 0.87);
+    margin: 0;
+    padding: 8px;
+   justify-content: space-around;
+
+}
+.formcreacion{
+    /*  text-decoration: none;
+     font-size: larger;
+     color: black;
+     padding-right: 20px;
+     padding-bottom: 0;
+     box-sizing: content-box; */
+     text-decoration: none;
+     color: black;
+     font-size:small;
+     font-weight: 500;
+     background-color: #d6cf677e;
+     border-radius: 5px;
+     margin: 10px;
+     margin-right: 20px;
+     box-sizing: content-box;
+     width: 20%;
+     margin-left: 29%;
+     padding: 4px;
+ }
+
+ .formularioContenido{
+     margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 50px; 
+    
+    margin: 0;
+    display: flex;
+    text-align: center;
+    background-image:url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Heimerdinger_24.jpg');
+    background-repeat: no-repeat;
+    
+    background-size:cover;
+    padding: 250px;
+    
+    
+}
+.formulario{
+    
+    
+     background-color: rgba(243, 235, 165, 0.404);
+     margin: auto;
+     
+     padding: 15px;
+     align-items: center;
+     justify-content: center;
+     
+}
+
+ .logoForm{
+    border: none;
+    width: 15%;
+}
+.logoTextoForm{
+    display: flex;
+    margin: 0;
+}
+.danger{
+    font-size: small;
+    color: red;
+    padding: 0;
+    margin: 0;
+}
+label{
+    font-size: larger;
+    padding: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input{
+    border-radius: 5px;
+    font-size: large;
+    padding: 5px;
+    background-color: rgba(208, 212, 148, 0.513);
+    border: 2px inset #6583c3;
+    
+}
+.selects{
+    border-radius: 5px;
+    color: black;
+    background-color: rgba(208, 212, 148, 0.513);
+    border: 2px inset #6583c3;
+}
+
+.contenidoform{
+    
+    display: flex;
+    
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.content option{
+    background-color: rgba(224, 220, 184, 0.733);
+}
+.description{
+    border-radius: 5px;
+   
+    background-color: rgba(208, 212, 148, 0.513);
+    border: 2px inset #6583c3;
+}
+
+.letras label{
+    color: black;
+}
+.enviar{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.borrar{
+    padding: 1px;
+    margin-left:100px ;
+    width: 20px;
+}

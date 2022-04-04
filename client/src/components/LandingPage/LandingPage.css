@@ -1,0 +1,59 @@
+body{
+/* background-image: url('https://tenor.com/view/lol-gif-22333264.gif'); */
+background-image: url('https://i.pinimg.com/originals/02/d2/1b/02d21b81d369ae00c8429bf586747790.jpg');
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-color: rgba(156, 156, 156, 0.479);
+ background-size:cover;
+ background-position: top;
+ 
+ margin-top:0;
+  
+}
+.des{
+  color: white
+}
+.tohome{
+    text-decoration: none;
+    background-color: rgba(91, 90, 117, 0.575);
+    border-radius: 5px;
+    border: 2px solid #050505;
+
+  }
+  .tohome:hover{
+    text-decoration: none;
+    background-color: rgba(78, 122, 172, 0.575);
+    border-radius: 5px;
+    border: 2px solid #5295ccc5;
+
+  }
+.Lcont{
+  display: flex;
+  flex-direction: column;
+}
+.texto{
+  display: flex;
+  background-color: rgba(109, 106, 180, 0.349);
+  flex-direction: column;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 600;
+  margin: 20px;
+  
+  
+ 
+}
+.app{
+  font-weight: 500;
+  
+  
+}
+.pacman1{
+  background-image: url('https://4.bp.blogspot.com/-kfyBCAAlWBM/WwRbjNICo6I/AAAAAAADe2Y/zYtagr99T04GFodjRdjTOd_eaBWXjRReQCLcBGAs/s640/gif-pacman-14.gif');
+  background-size: contain;
+  margin-top: 200px;
+}
+.pacman{
+  background-image: url('https://4.bp.blogspot.com/-kfyBCAAlWBM/WwRbjNICo6I/AAAAAAADe2Y/zYtagr99T04GFodjRdjTOd_eaBWXjRReQCLcBGAs/s640/gif-pacman-14.gif');
+  background-size: contain;
+  
+}
