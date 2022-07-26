@@ -12,14 +12,28 @@ export const GET_PLATFORMS='GET_PLATFORMS';
 export const ORDER_PLATFORMS='ORDER_PLATFORMS'
 
 
-export function getGames(){
+/* export function getGames(){
     return function(dispatch){
-        return fetch('http://localhost:3001/videogames')
+        return fetch('/videogames')
         .then(res => res.json())
         .then(data =>{
             dispatch({type: GET_GAMES, payload: data})
         })
-}}
+}} */
+
+export function getGames(){
+    return function(dispatch){
+        axios('/videogames')
+        
+        .then(data =>{
+            dispatch({type: GET_GAMES, payload: data.data})
+            
+        })
+        
+
+    }
+}
+
 
 export function getGenreForFilter(payload){
     return{
@@ -28,14 +42,25 @@ export function getGenreForFilter(payload){
         
     }}
 
-export function getGenres(){
+/* export function getGenres(){
     return function(dispatch){
-        return fetch('http://localhost:3001/genres')
+        return fetch('/genres')
         .then(res => res.json())
         .then(data =>{
             dispatch({type: GET_GENRES, payload: data})
         })
-}}
+}} */
+
+export function getGenres(){
+    return function(dispatch){
+        axios('/genres')
+        .then(res=>{
+            dispatch({type:GET_GENRES, payload:res.data})
+        })
+    }
+}
+
+
 
 export function createdInFilter(payload){
     return{
@@ -65,15 +90,26 @@ export function platformsOrderFilter(payload){
     }
 }
 
-export function getDetalle(idVideogame){
+/* export function getDetalle(idVideogame){
     return function(dispatch){
-        return fetch(`http://localhost:3001/videogames/${idVideogame}`)
+        return fetch(`/videogames/${idVideogame}`)
         .then(res => res.json())
         .then(data =>{
             dispatch({type: GET_DETALLE, payload: data})
         })
 
-}}
+}} */
+
+export function getDetalle(idVideogame){
+    return function(dispatch){
+        axios(`/videogames/${idVideogame}`)
+        .then(res=>{
+            dispatch({type: GET_DETALLE, payload: res.data})
+        })
+    }
+}
+
+
 
 export function limpiarDetalle(){
     return{
@@ -82,17 +118,29 @@ export function limpiarDetalle(){
             
 }}
 
-export function getGame(name){
+/* export function getGame(name){
     return function(dispatch){
-        return fetch(`http://localhost:3001/videogames?name=${name}`)
+        return fetch(`/videogames?name=${name}`)
         .then(res => res.json())
         .then(data =>{
             console.log(data)
-            dispatch({type: GET_GAME, payload: Array.isArray(data) ?data:'https://media.istockphoto.com/vectors/error-page-or-file-not-found-icon-vector-id924949200' /* ===['NO ENCONTRADO']?:data */})
+            dispatch({type: GET_GAME, payload: Array.isArray(data) ?data:'https://media.istockphoto.com/vectors/error-page-or-file-not-found-icon-vector-id924949200'  ===['NO ENCONTRADO']?:data })
         })
-}}
+}} */
 
-export function getPlatforms(){
+export function getGame(name){
+    return function(dispatch){
+        axios(`/videogames?name=${name}`)
+        .then(data=>{
+            console.log(data.data)
+            dispatch({type: GET_GAME, payload: Array.isArray(data.data) ?data.data:'https://media.istockphoto.com/vectors/error-page-or-file-not-found-icon-vector-id924949200'})
+        })
+    }
+}
+
+
+/* 
+ export function getPlatforms(){
     return function(dispatch){
         return fetch(`http://localhost:3001/platforms`)
         .then(res => res.json())
@@ -100,12 +148,25 @@ export function getPlatforms(){
             dispatch({type: GET_PLATFORMS, payload: data})
         })
 }
-}
+}  */
 
-export function postNewGame(payload){
+ export function getPlatforms(){
+    return function(dispatch){
+        axios(`/platforms`)
+        .then(data=>{
+            
+            dispatch({type: GET_PLATFORMS, payload: data.data})
+        })
+    }
+}
+ 
+
+
+ export function postNewGame(payload){
     return async function(dispatch){
-        const res = await axios.post('http://localhost:3001/videogame', payload)
+        const res = await axios.post('/videogame', payload)
         
        return res
     }
 }
+ 

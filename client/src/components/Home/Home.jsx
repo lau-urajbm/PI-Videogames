@@ -64,13 +64,13 @@ function handleRatingOrder(e){
     dispatch(ratingOrderFilter(e.target.value))
     setOrder(e.target.value)
 }
- function handlePlatformFilter(e){
+/*  function handlePlatformFilter(e){
     e.preventDefault()
     setPagActual(1) 
     dispatch(platformsOrderFilter(e.target.value))
     setOrder(e.target.value)
 
- }
+ } */
 
 
     return(
@@ -99,7 +99,7 @@ function handleRatingOrder(e){
             }</select>
             </div>
 
-            <div>
+            {/* <div>
                 <label>Platforms</label>
                 <select name='platforms' onChange={(e)=>handlePlatformFilter(e)}>
                 <option value='All'>All</option>
@@ -108,7 +108,7 @@ function handleRatingOrder(e){
                    })} 
                     
                 </select>
-            </div>
+            </div> */}
             
             <div>
             <label >VideoGames</label>
