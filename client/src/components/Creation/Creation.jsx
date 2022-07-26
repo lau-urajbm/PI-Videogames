@@ -46,7 +46,7 @@ return errors;
 export default function Creation(){
     const genres = useSelector(state=>state.genres)
     const platforms=useSelector(state=>state.platforms)
-    console.log(platforms)
+    
     const navigate = useNavigate()
 
     const dispatch = useDispatch()
@@ -88,7 +88,7 @@ export default function Creation(){
             ...input,
             genres: [...input.genres, e.target.value]
          } )
-         console.log(input.genres)
+         
 
          
     }

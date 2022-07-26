@@ -92,7 +92,7 @@ function handleRatingOrder(e){
             <select name="genre" onChange={(e)=>handleGenreChange(e)} >
                 <option value='All'>All</option>
                 {genres?.map(el=>{
-                    console.log(el.name)
+                    
                     if(el.name!=="Board Games"&&el.name!=="Educational"&&el.name!=="Card")
                     return <option value={el.name}>{el.name}</option>
                 })

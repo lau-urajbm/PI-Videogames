@@ -19,7 +19,7 @@ export default function Detalle(){
        
        
     }, [idVideogame])
-    console.log(gameDetail)
+  
 
     return(
         <div>
