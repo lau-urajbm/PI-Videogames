@@ -142,7 +142,7 @@ function handleRatingOrder(e){
  }
             
 
-           <Paginado nGamesPag={nGamesPag} games={games.length} paginado={paginado} />
+           
         <div className='contenedor'>
             {currGames?.map(el=>{
                 return(
@@ -155,6 +155,7 @@ function handleRatingOrder(e){
                 
             })}
         </div>
+        <Paginado nGamesPag={nGamesPag} games={games.length} paginado={paginado} />
         
 
         </div>
