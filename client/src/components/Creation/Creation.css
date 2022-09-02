@@ -1,10 +1,10 @@
 .navbarForm{
     display: flex;
-   z-index: 10;
+   
    align-self: flex-start;
    background-color: rgba(211, 192, 110, 0.87);
     margin: 0;
-    padding: 8px;
+   
    justify-content: space-around;
 
 }
@@ -15,33 +15,31 @@
      padding-right: 20px;
      padding-bottom: 0;
      box-sizing: content-box; */
+     display: flex;
      text-decoration: none;
      color: black;
      font-size:small;
      font-weight: 500;
      background-color: #d6cf677e;
      border-radius: 5px;
-     margin: 10px;
-     margin-right: 20px;
-     box-sizing: content-box;
-     width: 20%;
-     margin-left: 29%;
-     padding: 4px;
+    margin: 20px 10px 10px 10px;
+    margin-right: 20px;
+    align-items: center;
+    height: 40px;
+    margin-left: 29%;
+    padding: 5px;
+    
  }
 
  .formularioContenido{
-     margin-right: 5%;
-    margin-left: 5%;
-    margin-top: 50px; 
+     
+
+     margin: 100px 50px 0 50px;
     
-    margin: 0;
     display: flex;
     text-align: center;
-    background-image:url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Heimerdinger_24.jpg');
-    background-repeat: no-repeat;
-    
-    background-size:cover;
-    padding: 280px;
+ 
+   
     
     
 }
@@ -51,7 +49,7 @@
      background-color: rgba(243, 235, 165, 0.404);
      margin: auto;
      
-     padding: 15px;
+     padding: 50px 25px 50px 25px;
      align-items: center;
      justify-content: center;
      
@@ -128,4 +126,86 @@ input{
     padding: 1px;
     margin-left:100px ;
     width: 20px;
+}
+
+@media screen and (max-width: 660px){
+    .titulo{
+        color: #000000;
+        margin-top: 20px;
+        justify-self: flex-start;
+        font-size: medium;
+        text-decoration: none;
+        text-align:left ; 
+        vertical-align: middle; 
+    }
+    
+    .logoForm{
+       
+       display: none;
+        
+    }
+    .formcreacion{
+        display: flex;
+        text-decoration: none;
+        color: #0c0c0c;
+        font-size:10px;
+        
+       
+        border-radius: 5px;
+        margin: 10px 5px 5px 5px;
+        margin-right: 20px;
+        align-items: center;
+        height: 40px;
+        margin-left: 29%;
+        padding: 2px;
+    }
+    .formulario{
+    
+    
+        background-color: rgba(243, 235, 165, 0.404);
+        margin: auto;
+        
+        
+        align-items: center;
+        justify-content: center;
+        
+   }
+   .formularioContenido{
+     
+    margin: 5px 0 0 0;
+ 
+   
+   display: flex;
+   text-align: center; 
+}
+.content{
+    display: flex;
+    flex-direction: column;
+   
+}
+label{
+    font-size: small;
+   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input{
+    border-radius: 5px;
+    font-size: small;
+    
+    background-color: rgba(208, 212, 148, 0.513);
+    border: 2px inset #6583c3;
+    
+}
+.enviar{
+    
+}
+
+.borrar{
+    padding: 1px;
+  
+    width: 20px;
+}
+.selects{
+    width: 50px;
+}
 }

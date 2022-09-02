@@ -8,15 +8,15 @@ export function Card({background_image, name,genres,rating}){
 
     return(
         <div className='tarjeta'>
-            <h1>{name}</h1>
-            <img src={background_image} width='80%'></img>
+            <h1 >{name}</h1>
+           <center> <img src={background_image} width='300px'></img></center>
             <div className='adicionales'>
              <div className='genres'>GENRES: {genre.toString()}</div> 
              <div className='rating'>
             
             
              <div className='cal'>RATING<br/> {rating}</div>
-             <img className='jake' src='https://thumbs.gfycat.com/PiercingVacantIchthyostega-size_restricted.gif' width='20%'></img>
+             <img className='jake' src='https://thumbs.gfycat.com/PiercingVacantIchthyostega-size_restricted.gif' width='50px'></img>
 
              </div>
              </div>

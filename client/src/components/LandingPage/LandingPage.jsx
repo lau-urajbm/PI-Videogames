@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function LandingPage(){
 
     return(
-        <div className='Lcont'>
+        <div className='Lcont' >
         <p className='pacman1'> .<br/>.</p>  
         <div className='texto'>
         
@@ -17,7 +17,7 @@ export default function LandingPage(){
         
 
         <Link to='/home' >
-                <button className='tohome'><h1 className='HOMEBUT'>GO HOME</h1></button>
+                <center><button className='tohome'><h1 className='HOMEBUT'>GO HOME</h1></button></center>
             </Link>
         </div>
     )

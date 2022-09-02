@@ -74,14 +74,14 @@ function handleRatingOrder(e){
 
 
     return(
-        <div>
-            <NavBar/>
+        <div className='contenedor-home' style={{backgroundImage:`url(https://i.pinimg.com/originals/02/d2/1b/02d21b81d369ae00c8429bf586747790.jpg)`,  backgroundSize:'100vw 100vh', backgroundAttachment:'fixed', }}>
+            
             
             {games.length >0?
             
-            <div> 
-
-            <SearchBar/>
+            <> 
+                <NavBar/>
+                <center><SearchBar/></center>
             <div className='filters'>
             
             <button onClick={(e)=>handleClick(e) } className='boton'>
@@ -136,9 +136,10 @@ function handleRatingOrder(e){
             <option value='desc'>desc</option>
             </select>
             </div>
-            </div></div>:
+            </div>
+            </>:
 
- <div><img src='https://64.media.tumblr.com/c068ec27691d65b55a95307cd5140b4b/735ed27d674e5288-7d/s400x600/503a363de313d591d58bb2ed9f75c650b5503f28.gifv' width='20%'  className='load' ></img></div> 
+ <div style={{height:'100vh'}}><center><img  src='https://64.media.tumblr.com/c068ec27691d65b55a95307cd5140b4b/735ed27d674e5288-7d/s400x600/503a363de313d591d58bb2ed9f75c650b5503f28.gifv' width='20%'  className='load' ></img></center></div> 
  }
             
 

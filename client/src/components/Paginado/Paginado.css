@@ -1,6 +1,7 @@
 .lista{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     
 }
 nav{
@@ -26,3 +27,4 @@ select, .boton{
 .boton:focus{
     border: 2px solid black
 }
+

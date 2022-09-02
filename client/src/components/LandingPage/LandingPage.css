@@ -1,5 +1,5 @@
-body{
-/* background-image: url('https://tenor.com/view/lol-gif-22333264.gif'); */
+/* body{
+/* background-image: url('https://tenor.com/view/lol-gif-22333264.gif'); 
 background-image: url('https://i.pinimg.com/originals/02/d2/1b/02d21b81d369ae00c8429bf586747790.jpg');
   background-repeat: no-repeat;
   background-attachment:fixed;
@@ -9,6 +9,10 @@ background-image: url('https://i.pinimg.com/originals/02/d2/1b/02d21b81d369ae00c
  
  margin-top:0;
   
+} */
+
+body{
+  margin: 0;
 }
 .des{
   color: white
@@ -30,6 +34,13 @@ background-image: url('https://i.pinimg.com/originals/02/d2/1b/02d21b81d369ae00c
 .Lcont{
   display: flex;
   flex-direction: column;
+  background-image: url('https://i.pinimg.com/originals/02/d2/1b/02d21b81d369ae00c8429bf586747790.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+
 }
 .texto{
   display: flex;
@@ -38,6 +49,7 @@ background-image: url('https://i.pinimg.com/originals/02/d2/1b/02d21b81d369ae00c
   font-family:'Courier New', Courier, monospace;
   font-weight: 600;
   margin: 20px;
+  text-align: center;
   
   
  

@@ -4,10 +4,13 @@ img{
     
 }
 .tarjeta{
-    margin: 5px;
-    padding: 5px;
+    
+    padding: 1px;
     border-radius: 10px;
     background: -webkit-radial-gradient(right, #85ACF0 , #9385f0a8 , #85e2f0a4   );
+}
+.tarjeta > h1{
+    text-align: center;
 }
 .adicionales{
     display: flex;

@@ -14,16 +14,17 @@
 }
 
 .creacion{
+    display: flex;
     text-decoration: none;
     color: #000000;
     font-size:small;
     font-weight: 500;
     background-color: #74d0bc6b;
     border-radius: 5px;
-    margin: 10px;
+    margin: 20px 10px 10px 10px;
     margin-right: 20px;
-    box-sizing: content-box;
-    width: 20%;
+    align-items: center;
+    height: 40px;
     margin-left: 29%;
     padding: 5px;
 }
@@ -34,10 +35,10 @@
     font-weight: 500;
     background-color: #85e2f0b9;
     border-radius: 5px;
-    margin: 10px;
+    margin: 20px 10px 10px 10px;
     margin-right: 20px;
     box-sizing: content-box;
-    width: 20%;
+    height: 40px;
     margin-left: 29%;
     padding: 5px;
 }
@@ -53,4 +54,38 @@
     #aaf08569;
     justify-content: space-around;
     
+    
+}
+
+@media screen and (max-width: 660px){
+    .titulo{
+        color: #000000;
+        margin-top: 20px;
+        justify-self: flex-start;
+        font-size: medium;
+        text-decoration: none;
+        text-align:left ; 
+        vertical-align: middle; 
+    }
+    
+    .logo{
+       
+       display: none;
+        
+    }
+    .creacion{
+        display: flex;
+        text-decoration: none;
+        color: #0c0c0c;
+        font-size:10px;
+        
+        background-color: #74d0bc6b;
+        border-radius: 5px;
+        margin: 10px 5px 5px 5px;
+        margin-right: 20px;
+        align-items: center;
+        height: 40px;
+        margin-left: 29%;
+        padding: 2px;
+    }
 }

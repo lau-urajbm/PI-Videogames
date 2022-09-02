@@ -130,7 +130,7 @@ export default function Creation(){
     }
 
     return(
-        <div>
+        <div style={{backgroundImage:'url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Heimerdinger_24.jpg)', height:'100vh', backgroundSize:'100vw 100vh', backgroundAttachment:'fixed'}}>
             <NavBar className='navbarForm'/>
             <div className='formularioContenido'> 
             <form onSubmit={e=>hanldeSubmit(e)} className='formulario'>
