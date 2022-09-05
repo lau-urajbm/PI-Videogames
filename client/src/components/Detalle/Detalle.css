@@ -25,7 +25,7 @@
     font-size: smaller;
     }
     .game{
-       width: 200px;
+       width: 100px !important;
     }
     .noDes{
         display: flex;
