@@ -61,11 +61,12 @@
     .titulo{
         color: #000000;
         margin-top: 20px;
-        justify-self: flex-start;
-        font-size: medium;
+        justify-self:flex-end;
+        font-size: small !important;
         text-decoration: none;
         text-align:left ; 
         vertical-align: middle; 
+        
     }
     
     .logo{
@@ -88,4 +89,5 @@
         margin-left: 29%;
         padding: 2px;
     }
+   
 }

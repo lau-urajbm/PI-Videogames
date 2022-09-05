@@ -1,3 +1,52 @@
+
+@media screen and (max-width: 660px){
+    body, #root{
+        overflow: scroll;
+        height: 100vh;
+        
+    }
+    
+    .detalles{
+    
+        background: -webkit-radial-gradient(right, #85ACF0 , #9385f0a8 , #85e2f0a4   );
+        border-radius: 5px;
+        border: 2px outset #aaf08583;
+        padding: 1px;
+        display: flex;
+        width: 285px !important;
+        justify-content: space-between;
+        margin: auto !important;
+        flex-direction: column;  
+        margin-bottom: 10px !important; 
+    }
+    .descrip{
+        height: 200px;
+    overflow: scroll;
+    font-size: smaller;
+    }
+    .game{
+       width: 200px;
+    }
+    .noDes{
+        display: flex;
+        flex-direction: column;
+        font-size: smaller;
+        margin: 5px !important;
+        padding: 0 !important;
+        
+    }
+    .separador{
+        margin: 0 !important;
+    }
+}
+
+@media screen and (min-width: 660px){
+    .descrip{
+        height: 200px;
+    overflow: scroll;
+    }
+}
+
 .detalles{
     
     background: -webkit-radial-gradient(right, #85ACF0 , #9385f0a8 , #85e2f0a4   );
@@ -15,6 +64,8 @@
 }
 .descrip{
     text-align: left;
+    overflow:auto;
+    
 }
 .noDes{
     display: flex;
@@ -51,5 +102,14 @@
     padding: 8px;
 }
 .container{
+   
     margin-bottom: 20px;
+    
+}
+.game{
+    width:300px
+}
+
+.separador{
+    text-align: center;
 }

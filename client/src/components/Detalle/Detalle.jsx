@@ -22,14 +22,14 @@ export default function Detalle(){
   
 
     return(
-        <div style={{backgroundImage:`url(https://i.pinimg.com/originals/02/d2/1b/02d21b81d369ae00c8429bf586747790.jpg)`,  backgroundSize:'100vw 100vh', backgroundAttachment:'fixed', height:'100vh'}}>
+        <div className='detallesCont' style={{backgroundImage:`url(https://i.pinimg.com/originals/02/d2/1b/02d21b81d369ae00c8429bf586747790.jpg)`,  backgroundSize:'100vw 100vh', backgroundAttachment:'fixed', height:'100vh'}}>
             <NavBar/>
 
             {gameDetail.length > 0?
                 
                 <div className='container'>
                      <h1 className='tituloD'>{gameDetail[0].name} </h1>
-                     <center><img src={gameDetail[0].background_image} width='45%' className='game'/></center>
+                     <center><img src={gameDetail[0].background_image}  className='game'/></center>
                      <div className="detalles">
                     <div className='noDes'>
                      <div>GENRES: <br/>{gameDetail[0].genres.join(', ')}</div><br/> 
@@ -38,8 +38,8 @@ export default function Detalle(){
                      <div>RATING: {gameDetail[0].rating}</div><br/> 
                      <div>PLATFORMS: <br/> {gameDetail[0].platforms.join(', ')}</div><br/> 
                      </div>
-                    <center> <p>---------------------------------------</p></center>
-                     <div className='descrip'>DESCRIPTION: {gameDetail[0].description}</div>
+                    <p className='separador'>---------------------------------------</p>
+                     <div className='descrip'><p>DESCRIPTION: {gameDetail[0].description}</p></div>
                      </div>
                      
                 </div>:
